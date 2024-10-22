@@ -35,7 +35,7 @@ elif [ ${UBUNTU_VER} = '18.04' ] || [ ${UBUNTU_VER} = '20.04' ]; then
 	echo "Installing OpenRAVE 0.53.1 from source (Commit ${RAVE_COMMIT})..."
 	echo ""
 	mkdir -p ~/git; cd ~/git
-	git clone -b production https://github.com/rdiankov/openrave.git
+	git clone -b production https://ghp.ci/https://github.com/rdiankov/openrave.git
 fi
 cd openrave; git reset --hard ${RAVE_COMMIT}
 mkdir build; cd build
